@@ -1,0 +1,86 @@
+/* Setting Roboto here assumes that Google Fonts is included. */
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1{
+  margin: 1rem;
+  font-weight: 300;
+  font-size: 3rem;
+  color: rgba(255,255,255,0.8);
+}
+nav{
+  background: rgba(0,0,0,0.4);
+}
+/* Photo by Björn Austmar Þórsson from Pexels */
+#banner{
+  background-image: url(Island2.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 300px;
+}
+
+/* this serves as a flex container to hold many individual countries */
+#islands{
+  display: flex;
+  flex-flow: row wrap; 
+  margin: 15px;
+}
+ 
+/* flex properties help data to flow well accross the layout */
+.island {
+  flex-grow: 1;
+  flex-basis: 275px;
+  justify-content: space-between;
+  padding: 1rem;
+   margin:15px;
+}
+
+/* A lighter font weight helps establish visual hierarchy */
+.island h3 {
+  font-weight: 300;
+}
+
+.island a{
+  color: #fff;
+  padding: 0 1rem;
+  background: rgba(0,0,0,0.5);
+  text-decoration: none;
+}
+
+.island .map{
+  height: 200px;
+  margin: -1rem -1rem 1rem -1rem;
+  background-position: 50% 50%;
+}
+
+
+
+
+/* adjust alignment of icons with text */
+.material-icons{
+  vertical-align: text-bottom;
+}
+
+.nav-item .direction{
+  display:none;
+}
+
+
+footer {
+  background: #210;
+  color: #fff;  
+  padding: 1rem;
+}
+
+footer p{
+  margin: 0;
+}
+
+footer p a{
+  color: #fff;
+}
+
+footer p a:hover{
+  color: #fcd7be;
+}
